@@ -1,0 +1,19 @@
+.title{
+    color: #010101;
+    text-align: center;
+    /*padding: 10px;*/
+}
+.date{
+    text-align: right;
+}
+body{
+    background-color: rgb(132, 75, 193);
+    display: grid;
+}
+.container {
+    background-color: #438f7d;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของ container */
+    margin-left: auto; /* จัดชิดขอบซ้าย */
+    margin-right: auto; /* จัดชิดขอบขวา */
+    padding: 20px; /* เพิ่มระยะขอบใน container */
+    box-sizing: border-box; /* กำหนดให้ขอบของ container นับเข้าไปในความกว้างทั้งหมด */}
