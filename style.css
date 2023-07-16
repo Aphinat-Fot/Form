@@ -7,14 +7,14 @@
     text-align: right;
 }
 body{
-    background-color: rgb(106, 98, 245);
+    background-color: rgb(55, 117, 158);
     display: grid; 
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); 
     min-height: auto;
     margin: auto;
 }
 .container {
-    background-color: #dcc8dd;
+    background-color: #99cb7e;
     max-width: 1200px; 
     margin-left: auto; 
     margin-right: auto; 
@@ -35,7 +35,7 @@ body{
 
 
 .button-style {
-    background-color: rgb(112, 201, 30);
+    background-color: rgb(30, 101, 201);
     color: rgb(3, 2, 2);
     font-size: 18px;
     padding: 10px 20px;
