@@ -15,5 +15,5 @@ body{
     max-width: 1200px; /* กำหนดความกว้างสูงสุดของ container */
     margin-left: auto; /* จัดชิดขอบซ้าย */
     margin-right: auto; /* จัดชิดขอบขวา */
-    padding: 20px; /* เพิ่มระยะขอบใน container */
+    padding: 25px; /* เพิ่มระยะขอบใน container */
     box-sizing: border-box; /* กำหนดให้ขอบของ container นับเข้าไปในความกว้างทั้งหมด */}
