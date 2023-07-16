@@ -1,19 +1,33 @@
 .title{
-    color: #010101;
+    color: hsl(0, 0%, 0%);
     text-align: center;
-    /*padding: 10px;*/
+    padding: 10px;
 }
 .date{
     text-align: right;
 }
 body{
-    background-color: rgb(132, 75, 193);
-    display: grid;
+    background-color: rgb(106, 98, 245);
+    display: grid; 
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); 
+    min-height: auto;
+    margin: auto;
 }
 .container {
-    background-color: #438f7d;
-    max-width: 1200px; /* กำหนดความกว้างสูงสุดของ container */
-    margin-left: auto; /* จัดชิดขอบซ้าย */
-    margin-right: auto; /* จัดชิดขอบขวา */
-    padding: 30px; /* เพิ่มระยะขอบใน container */
-    box-sizing: border-box; /* กำหนดให้ขอบของ container นับเข้าไปในความกว้างทั้งหมด */}
+    background-color: #ffffff;
+    max-width: 1000px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-left: 30px; 
+    padding-right: 30px;
+    box-sizing: border-box; 
+}
+
+.par{
+    text-indent: 2.5em;
+    line-height: 3;
+    font-size: 16px;
+}
+.textright{
+    text-align: right;
+}
