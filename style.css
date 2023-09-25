@@ -14,15 +14,11 @@ body{
     margin: auto;
 }
 .container {
-    background-color: #e6afaf;
-    max-width: 1200px; 
+    background-color: azure;
+    width: 800px; 
     margin-left: auto; 
-    margin-right: auto; 
-    padding-left: 30px; 
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-top: 150px;
-    box-sizing: border-box; 
+    margin-right: auto;
+    padding: 50px; 
 }
 
 .par{
@@ -42,4 +38,8 @@ body{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+  }
+  .head{
+    font-size: 30px;
+    text-align: center;
   }
