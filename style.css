@@ -1,3 +1,7 @@
+@font-face {
+    font-family:'kanit' ;
+    src: url('./Kanit/Kanit-Regular.ttf');
+}
 .title{
     color: hsl(0, 0%, 0%);
     text-align: center;
@@ -5,41 +9,114 @@
 }
 .date{
     text-align: right;
+    margin-bottom: 20px;
 }
 body{
-    background-color: rgb(55, 117, 158);
-    display: grid; 
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); 
-    min-height: auto;
-    margin: auto;
+    font-family: 'kanit'; 
 }
+
 .container {
     background-color: azure;
-    width: 800px; 
+    width: 650px; 
     margin-left: auto; 
     margin-right: auto;
-    padding: 50px; 
+    padding: 50px;
+}
+.container1 {
+  background-color: azure;
+  width: 600px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+.container2 {
+  background-color: azure;
+  width: 550px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+.form-input{
+    margin-bottom: 10px;
 }
 
-.par{
-    text-indent: 2.5em;
-    line-height: 3;
-    font-size: 16px;
+.text-right{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  margin-bottom: 20px;
 }
-.textright{
-    text-align: right;
+.text-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-
+.red{
+  color: red;
+}
+#red1{
+  color: red;
+}
 .button-style {
-    background-color: rgb(117, 161, 222);
+    background-color: rgb(1, 225, 68);
     color: rgb(3, 2, 2);
     font-size: 18px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    margin-right: 20px;
+ 
+  }
+  .button-style1 {
+    background-color: rgb(226, 41, 8);
+    color: rgb(3, 2, 2);
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+ 
   }
   .head{
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+    margin-bottom: 20px;
   }
+  .input{
+    width: 70%;
+    margin-right: 20px;
+    padding: 5px;
+  }
+  .flex{
+    display: flex;
+  }
+  .header-form {
+    width: 100px;
+
+
+  }
+  .head-head{
+    margin-bottom: 20px;
+  }
+  .name{
+    text-align: right;
+  }
+  .text-indent{
+    text-indent: 2.5em;
+  }
+  input[type="submit"]{
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #1fccaf;
+    width: 50%;
+}
+
+#other_ordinary{
+  margin-left: 10px;
+}
+#label_ordinary{
+  margin-left: 20px;
+}

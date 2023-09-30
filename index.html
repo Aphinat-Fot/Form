@@ -1,124 +1,287 @@
 <!DOCTYPE html>
-<html lang="en" class>
+<html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ใบสมัครสมาชิก สมาคมกีฬาจังหวัดมุกดาหาร</title>       
         <link rel="stylesheet" href="style.css" />
-        <link href='https://fonts.googleapis.com/css?family=Sarabun' rel='stylesheet'>
+        <script src="logic.js"></script>
 
   </head>
   <body>
         <div class="container">
-            <div class="head">ใบสมัครสมาขิก</div>
-            <div class="head">สมาคมกีฬาจังหวัดมุกดาหาร</div>
+            <div class="head">
+                <div >ใบสมัครสมาชิก</div>
+            <div >สมาคมกีฬาจังหวัดมุกดาหาร</div>
+            </div>
+        <form action="">
+
+          
             <div class="date">
                 <label for="date">วันที่&nbsp;&nbsp;</label>
-                <input type="date" id="date"/>
+                <span class="red">*</span>
+                <input type="datetime-local" id="date" required/>
             </div>
-            <div style="font-size: 16px;">
-                <label for="asd">เรื่อง ขอสมัครเข้าเป็นสมาชิกสมาคมกีฬาจังหวัดมุกดาหาร</label>
-                <br><br>
-                <label for="srer">เรียน นายกสมาคมกีฬาจังหวัดมุกดาหาร</label>
-
+            <div class="head-head">
+                <div>
+                    เรื่อง ขอสมัครเข้าเป็นสมาชิกสมาคมกีฬาจังหวัดมุกดาหาร
+                </div>
+                 <div>
+                     เรียน นายกสมาคมกีฬาจังหวัดมุกดาหาร
+                </div>
             </div>
-            <form>
-                <p class="par">
-                    <label for="name">ข้าพเจ้า</label>
-                <input type="text" name="name" id="name" />
-                <label for="age">อายุ</label>
-                <input type="number" name="age" id="age" min="0"  /> 
-                <label for="aka">ในนาม(ระบุตำแหน่งและชื่อหน่วยงาน ที่สมัคร)</label>
-                <input type="text" id="aka" style="width: 21em;" /><br>
-                <label for="hbd">วัน/เดือน/ปีเกิด</label>
-                <input type="date" id="hbd"  />
-                <label for="moo">หมู่</label>
-                <input type="text" id="moo"  />
-                <label for="alley">ซอย</label>
-                <input type="text" id="alley"  /> 
-                <label for="road">ถนน</label>
-                <input type="text" id="road"  />
-                <label for="subdistrict" >ตำบล</label>
-                <input type="text" id="subdistrict"  />
-                <br>
-                <label for="district" >อำเภอ</label>
-                <input type="text" id="district" />
-                <label for="province" >จังหวัด</label>
-                <input type="text" id="province" />
-                <label for="zipcode" >รหัสไปรษณีย์</label>
-                <input type="text" id="zipcode"/>
-                <label for="career" >อาชีพ</label>
-                <input type="text" id="career"  style="width: 22em;" />
-                <br>
-                <label for="work-at" >ทำงานที่</label>
-                <input type="text" id="work-at"  style="width: 22em;"/>
-                
-                <label for="phone">เบอร์โทรศัพท์บ้าน/ที่ทำงาน</label>
-                <input type="text" id="phone"/>
-                <label for="mobile">หมายเลขโทรศัพท์มือถือ</label>
-                <input type="text" id="mobile" />
-                <br>
-                <label for="photo">เลือกรูปภาพ 1 นิ้ว</label>
-                <input type="file" name="" id="photo"></p>
-                <TABLE align="center" WIDTH="1100" BORDER="0" >
-                    <TR >
-                        <TD >
-                            <div>
-                                
-                                <p>ขอสมัครเข้าเป็นสมาชิกสมาคมกีฬาจังหวัดมุกดาหาร</p>
-                        
-                                 
+             <div class="container1">
+                        <div class="flex form-input">
+                            <div class="header-form" >ข้าพเจ้า</div>
+                            <div class="red">*</div>
+                            <input class="input" type="text" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">อายุ</div>
+                            <div class="red">*</div>
+                            <input class="input" type="text" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">ในนาม(ระบุตำแหน่งและชื่อหน่วยงาน ที่สมัคร)</div>
+                            <div class="red">*</div>
+                            <input class="input" type="text" required>
                             
-                            </div>   
-                        
-                    </TR> 
-                  
-                </TABLE>
-                
-                <p class="par">ประเภท</p>
-                <p style="text-indent: 5em;"><input type="radio" name="a" />สามัญ(ระบุชื่อหน่วยงาน ที่สมัคร) 
-                <input type="text"  style="width: 21em;" /></p>
-                <p style="text-indent: 5em;"><input type="radio" name="a" />วิสามัญ</p>
-                <TABLE align="center" WIDTH="1100" BORDER="0" >
-                    <TR >
-                        <TD >
-                            <div>
-                                <p style="text-indent: 2.5em;">ข้าพเจ้าได้ศึกษาทำความเข้าใจในข้อบังคับของสมาคมกีฬาจังหวัดมุกดาหารโดยละเอียดเเล้ว ยินดีปฏิบัติตามข้อบังคับ</p>
-                                <p> ของสมาคมกีฬาจังหวัดมุกดาหาร และให้ความร่วมมือในกิจการของสมาคมกีฬาจังหวัดมุกดาหารทุกประการ</p>
-                                <p style="text-indent: 2.5em;">ข้าพเจ้าได้ส่งหลักฐานดังนี้</p>
-                                 
-                            
-                            </div>   
-                        
-                    </TR> 
-                  
-                </TABLE>
-                <br
-                <br>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">วันเดือนปีเกิด </div>
+                            <div class="red">*</div>
+                            <input class="input" type="date" name="" id="" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">ที่อยู่</div>
+                            <div class="red">*</div>
+                            <textarea name="" id="" cols="55" rows="5"></textarea>
 
-            </TD> 
-             
-                <p class="par"><input type="checkbox" />สำเนาบัตรประจำตัวประชาชน หรือ บัตรข้าราชการ และสำเนาทะเบียนบ้าน </p>
-                <p class="par"><input type="checkbox" />รูปถ่าย 1 นิ้ว จำนวน 2 รูป</p>
-                <p class="par"><input type="checkbox" />ค่าลงทะเบียนครั้งแรก    20.-บาท</p>
-                <p class="par"><input type="checkbox" />ค่าบำรุงในการสมาชิกสมาคมฯ ประเภทสมาชิกวิสามัญเป็นรายปีๆ ละ 100.- บาท</p>
-                <p class="par"><input type="checkbox" />ค่าบำรุงในการสมาชิกสมาคมฯ ประเภทสมาชิกสามัญเป็นรายปีๆ ละ 300.- บาท</p>
-                <p class="par"><input type="checkbox" />อื่นๆ <input type="text" style="width: 30em;"></p>
-                
-                <p class="par">จึงเรียนมาเพื่อโปรดทราบและดำเนินการต่อไป</p>
-                <p class="textright"><label for="">ลงชื่อ</label>
-                <input type="text" name="" id=""   style="width: 21em;" /></p>
-                <p class="textright"><label for="">ตำแหน่ง</label> <input type="text" name="" id=""  style="width: 21em;" /></p><br><br>
-                <hr>
-                <p class="par">ความเห็นของคณะกรรมการสมาคมกีฬาจังหวัดมุกดาหาร</p>
-                <p style="text-indent: 5em;"><input type="radio" name="b" id="" />รับไว้เป็นสมาชิก
-                <input type="radio" name="b" id="" />ไม่รับ </p>
-                <p class="textright"><label for="">ลงชื่อ</label><input type="text"  style="width: 21em;" /></p>
-                <p class="textright">(นายเอกอมร ศรีลาศีกดิ์)</p>
-                <p class="textright">นายกสมาคมกีฬาจังหวัดมุกดาหาร</p>
-                <div class="button" align="center">
-                    <button type="button"class="button-style">ยืนยันการสมัคร</button>
+                        </div>
+                        <!-- <div  class="flex form-input">
+                            <div class="header-form">หมู่</div>
+                            <div class="red">*</div>
+                            <input class="input"  type="text" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">ซอย</div >
+                            <div class="red">*</div>
+                        <input class="input" type="text" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">ถนน</div >
+                            <div class="red">*</div>
+                            <input  class="input"  type="text" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">ตำบล</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="text" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">อำเภอ</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="text" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">จังหวัด</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="text" required>
+                        </div> -->
+                        <div class="flex form-input">
+                            <div class="header-form">รหัสไปรษณีย์</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="text" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">อาชีพ</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="text" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">ทำงานที่</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="text" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">เบอร์โทรศัพท์บ้าน/ที่ทำงาน</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="text" oninput="restrictInput(event)" required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">หมายเลขโทรศัพท์มือถือ</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="tel" oninput="restrictInput(event)"  required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">อีเมลล์</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="email"  required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">สีที่ชอบ</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="color"  required>
+                        </div>
+                        <div class="flex form-input">
+                            <div class="header-form">เลือกรูปภาพ 1 นิ้ว</div>
+                            <div class="red">*</div>
+                            <input  class="input" type="file" required>
+                        </div> 
                     </div>
-            </form>
+                  
+                    <div class="flex form-input">
+                        <div class="">ขอสมัครเข้าเป็นสมาชิกสมาคมกีฬาจังหวัดมุกดาหาร</div>
+                    </div>
+                    <div class="container1">
+                        <div class="flex form-input">
+                            <div >ประเภท</div>
+                            <div class="red">*</div>
+                            <select name="type" id="type" onchange="Type('type','label_ordinary','red1','other_ordinary');" required>
+                                <option value="" selected>เลือกประเภท</option>
+                                <option value="ordinary">สามัญ</option>
+                                <option value="extraordinary">วิสามัญ</option>
+
+                            </select>
+                            <div id="label_ordinary" hidden>(ระบุชื่อหน่วยงาน ที่สมัคร)</div>
+                            <div id="red1" >*</div>
+                            <input type="text" id="other_ordinary" hidden>
+                        </div>
+                   
+                    </div>
+                    <!-- <div class="container2">
+                        <div>
+                            <div class="flex form-input">
+                                <input  type="radio" id="choose1" name="a" onchange="CheckMember();" required>
+                                <div class="">สามัญ</div>
+                                <div id="member_group" hidden>
+                                    <div class="flex">
+                                        <div class="text-indent">(ระบุชื่อหน่วยงาน ที่สมัคร)</div>
+                                        <input type="text">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           <div class="flex form-input">
+                            <input type="radio" id="choose2" name="a" onchange="CheckMember();" >
+                            <div>วิสามัญ</div>
+                           </div>
+                        </div>
+                    </div> -->
+             
+                    <div class="text-indent form-input" >
+                        ข้าพเจ้าได้ศึกษาทำความเข้าใจในข้อบังคับของสมาคมกีฬาจังหวัดมุกดาหารโดยละเอียดเเล้ว ยินดีปฏิบัติตามข้อบังคับ ของสมาคมกีฬาจังหวัดมุกดาหาร และให้ความร่วมมือในกิจการของสมาคมกีฬาจังหวัดมุกดาหารทุกประการ
+                    </div>
+                    <div class="container1">
+                        <div>
+                            ข้าพเจ้าได้ส่งหลักฐานดังนี้ <span class="red">*</span>
+               </div>
+                    </div>
+                          
+                    <div class="container2">
+                        <div>
+                            <div class="flex form-input">
+                                <input type="checkbox" name="" id="">
+                                <div>สำเนาบัตรประจำตัวประชาชน หรือ บัตรข้าราชการและสำเนาทะเบียนบ้าน</div>
+                            </div>
+                            <div class="flex form-input">
+                                <input type="checkbox" name="" id="">
+                                <div>รูปถ่าย 1 นิ้ว จำนวน 2 รูป</div>
+                            </div>
+                            <div class="flex form-input">
+                                <input type="checkbox" name="" id="">
+                                <div>ค่าลงทะเบียนครั้งแรก 20.-บาท</div>
+                            </div>
+                            <div class="flex form-input">
+                                <input type="checkbox" name="" id="">
+                                <div>ค่าบำรุงในการสมาชิกสมาคมฯ ประเภทสมาชิกวิสามัญเป็นรายปีๆ ละ 100.- บาท</div>
+                            </div>
+                            <div class="flex form-input">
+                                <input type="checkbox" name="" id="">
+                                <div>ค่าบำรุงในการสมาชิกสมาคมฯ ประเภทสมาชิกสามัญเป็นรายปีๆ ละ 300.- บาท</div>
+                            </div>
+                            <div class="flex form-input">
+                                <input type="checkbox" name="other" id="other" onchange="CheckOther();" >
+                                <div class="header-form">อื่นๆ</div>
+                                <div id="other1" hidden>
+                                    <input type="text">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="form-input text-indent">
+                        จึงเรียนมาเพื่อโปรดทราบและดำเนินการต่อไป
+                    </div>
+                    <div>
+                        <div class="text-right" >
+                            <div class="">ลงชื่อ</div>
+                            <div class="red">*</div>
+                            <input type="text" required>
+                        </div>
+                        <div class="text-right">
+                            <div>ตำแหน่ง</div>
+                            <div class="red">*</div>
+
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div>
+                        <hr width="100%" size="2">
+                    </div>
+                    <div class="flex">
+                        <div class="text-indent form-input">
+                            ความเห็นของคณะกรรมการสมาคมกีฬาจังหวัดมุกดาหาร
+                        </div>
+                        <span class="red">*</span>
+                    </div>
+                   
+                    <div class="flex container2 form-input" >
+                        <div class="flex ">
+                            <input type="radio" name="b" id="">
+                            <div>
+                                รับไว้เป็นสมาชิก
+                            </div>
+                            
+                        </div>
+                        <div class="flex">
+                            <input type="radio" name="b" id="">
+                            <div>
+                                ไม่รับ
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-right" >
+                            <div class="">ลงชื่อ</div>
+                            <div class="red">*</div>
+
+                            <input type="text" required>
+                        </div>
+                        <div class="text-right">
+                            <div>
+                                (นายเอกอมร ศรีลาศักดิ์)
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div>นายกสมาคมกีฬาจังหวัดมุกดาหาร</div>
+                        </div>
+                    </div>
+             
+                    <div class="text-center">
+                        <div>
+                            <button type="submit"class="button-style">submit</button>
+                        </div>
+                        <div >
+                            <button type="reset" class="button-style1">reset</button>
+                        </div>
+                    </div>
+             
+                   
+                    <!-- <input type="submit"> -->
+
+               </form>    
         </div>
   </body>
 </html>
