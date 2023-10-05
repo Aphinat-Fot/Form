@@ -34,7 +34,7 @@ function Type(select,label,red,input) {
     var red = document.getElementById(red)
     var input = document.getElementById(input);
 
-    if (checked.value == "ordinary") {
+    if (checked.value == "สามัญ") {
         label.hidden = false;
         red.hidden =false;
         input.hidden = false;
